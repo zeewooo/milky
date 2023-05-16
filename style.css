@@ -1,0 +1,351 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*css 리셋코드*/
+body{
+    width: 100%;
+
+}
+
+header{    
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    background-color: #fff;
+    margin: 0px auto;
+}
+
+
+#mainlogo{
+    width: 88px;
+    height: 30px;
+    background-image: url("https://milkypint.com/SkinImg/img/logo_34g.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    
+    
+}
+
+#sublogo{
+
+    background-image: url("https://milkypint.com/SkinImg/gnbMenu_m.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+    background-size: 100%;
+    width: 25px;
+    height: 20px;
+}
+
+
+
+#container{
+    padding-top: 50px;
+}
+#m_contents{
+    background-image: url("https://milkypint.com/SkinImg/slide/main_1_mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+    background-size: 100%;
+    height: 460px;
+}
+
+p{
+    text-align: center;
+    font-size: 34px;
+    font-family:'Montserrat Bold',sans-serif;
+    font-weight: bolder;
+    padding: 20px;
+}
+
+section{
+    height: auto;
+}
+
+#contents{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 32px;
+   
+}
+@media(min-width:1024px){/*pc버전*/
+#contents{grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+}
+
+
+.goods > :first-child{
+    width: 100%;
+    padding-top: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+
+}
+
+.goods > p {
+    font-size: 12px;
+    color: #757575;
+}
+
+
+
+.goods > #img1{
+    
+    background-image: url("https://milkypint.com/web/product/big/202304/28fd7676bc78cb4f0794ec62ae0bdaed.jpg");
+}
+
+.goods > #img2{
+    
+    background-image: url("https://milkypint.com/web/product/big/202304/0367b9836e3e04f09d3163a8e05048d2.jpg");
+}
+
+
+.goods > #img3{
+    
+    background-image: url("https://milkypint.com/web/product/big/202301/f1bdc82234885f1bab4f69a88be3d9e1.png");
+}
+
+
+.goods > #img4{
+    
+    background-image: url("https://milkypint.com/web/product/big/202301/4e98618b29670ed71ae2e9e06b50b096.png");
+}
+
+#video{
+    padding: 15px 0px;
+    margin-top: 20px;
+
+ 
+
+}
+
+#video > #videoimg{
+    background-image: url("https://i.ytimg.com/vi/d-SvnE8xFgQ/sddefault.jpg");
+    box-sizing: border-box;
+    width:100%;
+    padding-top: 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#notice {
+    display: grid;
+    padding: 10px 0 ;
+
+}
+
+@media(min-width:1024px){/*pc버전*/
+    #notice {grid-template-columns: 1fr 1fr;
+                }
+    }
+
+
+
+#notice > div{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#n1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #626672;
+}
+
+#n1 > p { 
+ font-size:16px ;
+ 
+}
+ #nimg{
+    background-image: url("https://img.echosting.cafe24.com/skin/base_ko_KR/board/btn_board_more.gif");
+    width: 39px;
+    height: 10px;
+    background-repeat: no-repeat;
+}
+
+.title {
+    border-bottom: 1px dotted #d8d8d8;
+    color: #a4a4a4;
+    line-height: 34px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title > h2{
+    font-size: 12px;
+   
+}
+.title> h3{
+    font-size: 12px;
+    
+}
+
+#n2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #626672;
+
+}
+#n2 > p{
+    font-size: 16px;
+}
+
+
+
+.rimg> p{
+    font-size: 10px;
+}
+
+.rimg > :first-child{ 
+    width: 100%;
+    height: 110px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+#con2{display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;}
+
+
+#rimg1{
+    background-image: url("https://milkypint.com/web/product/tiny/202305/6531155079369cf138ebb7dd0e18c8b0.gif");
+
+}
+#rimg2{
+    background-image: url("https://milkypint.com/web/product/tiny/202301/8a6b4052200b9b2d731a78e72f4f6788.png");
+    
+}#rimg3{
+    background-image: url("https://milkypint.com/web/product/tiny/202212/b33b6f70cc47c4e74dd318d799fb5974.jpg");
+    
+}#rimg4{
+    background-image: url("https://milkypint.com/web/product/tiny/202211/0ad869681c1f63a165245a21f0b9e54e.jpg");
+    
+}
+
+
+
+#footinfo {
+    padding: 10px 5%;
+    border-top: 1px #ddd solid;
+    background-color: #f8f8f8;
+    text-align: center;
+    
+}
+
+#cs1 > h2 {
+    font-size: 18px;
+    margin: 24px 0;
+    font-family: 'Montserrat Bold',sans-serif;
+} 
+#cs1 > h3{
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat Bold',sans-serif;
+}
+#cs1 > p{
+    font-size: 14px;
+    line-height: 180%;
+}
+
+#cs2 {
+    padding: 15px 0;
+    font-family: 'Montserrat Bold',sans-serif;
+}
+
+#cs2 > h3{
+    font-size: 18px;
+}
+
+#cs2 > ul {
+    display: flex;
+    justify-content: space-between;
+}
+.link{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 auto;
+    border: 1px #ddd solid;
+    line-height: 5;
+   
+
+}
+
+footer> div{ 
+    border-top: 1px #ddd solid;
+    font-weight: normal;
+    
+}
+
+#uti{display: flex;
+justify-content: space-between;}
+
+
+#uti > p {
+    font-size: 12px;
+}
+
+#foot > p{
+    font-size: 14px;
+    color: #757575;
+    padding-top: -10px;
+}
